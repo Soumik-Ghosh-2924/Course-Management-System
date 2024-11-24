@@ -3,10 +3,11 @@ This is a Modular Project , since it's a part of  large scale Full Stack Project
 
 Here is the code for your GitHub `README.md` file, formatted to provide clear and detailed information about your API. This README highlights the endpoints and gives potential users or contributors a comprehensive overview.
 
-```markdown
+
 # API Documentation for Topics and Courses Management System
 
-This project is a REST API built using **Java 8** and **Spring Boot**. The API provides endpoints to manage topics, courses, and lessons, supporting CRUD operations. Below, you'll find a detailed description of all available endpoints.
+This project is a REST API built using **Java 8** and **Spring Boot**. The API provides endpoints to manage topics,
+courses, and lessons, supporting CRUD operations. Below, you'll find a detailed description of all available endpoints.
 
 ---
 
