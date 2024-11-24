@@ -1,126 +1,118 @@
-# Course-Management-System
-This is a Modular Project , since it's a part of  large scale Full Stack Project for creating a deliverable product in the form of a Learning Management System.
+# 📚 Course Management System  
 
-Here is the code for your GitHub `README.md` file, formatted to provide clear and detailed information about your API. This README highlights the endpoints and gives potential users or contributors a comprehensive overview.
+**A Modular Project**  
+Part of a larger Full Stack application designed to create a fully functional Learning Management System (LMS).  
 
-
-# API Documentation for Topics and Courses Management System
-
-This project is a REST API built using **Java 8** and **Spring Boot**. The API provides endpoints to manage topics,
-courses, and lessons, supporting CRUD operations. Below, you'll find a detailed description of all available endpoints.
+Built with **Java 8** and **Spring Boot**, this project delivers a robust and scalable API for managing topics, courses, and lessons.  
 
 ---
 
-## Features
-- Manage **Topics**
-- Manage **Courses** under a specific Topic
-- Manage **Lessons** under a specific Course
-- Follow RESTful principles for clean and scalable API design
+## 🚀 Key Features  
+
+### 🧩 **Topics Management**  
+- Create, update, delete, and view topics seamlessly.  
+
+### 🎓 **Courses Management**  
+- Manage courses under specific topics with ease.  
+- Features include adding, updating, deleting, and viewing details.  
+
+### 📖 **Lessons Management**  
+- Organize lessons under courses efficiently.  
+- Perform CRUD operations for each lesson.  
 
 ---
 
-## API Endpoints
+## 🌐 API Documentation  
 
-### Topics Endpoints
-1. **Get All Topics**
-   - **Endpoint**: `GET /topics`
-   - **Description**: Retrieves a list of all topics.
-
-2. **Get a Topic by ID**
-   - **Endpoint**: `GET /topics/{id}`
-   - **Description**: Retrieves details of a specific topic by its ID.
-
-3. **Create a New Topic**
-   - **Endpoint**: `POST /topics`
-   - **Description**: Creates a new topic.
-
-4. **Update a Topic**
-   - **Endpoint**: `PUT /topics/{id}`
-   - **Description**: Updates an existing topic based on its ID.
-
-5. **Delete a Topic**
-   - **Endpoint**: `DELETE /topics/{id}`
-   - **Description**: Deletes a specific topic by its ID.
+| **Category**         | **HTTP Method** | **Endpoint**                                         | **Description**                                            |
+|-----------------------|-----------------|-----------------------------------------------------|------------------------------------------------------------|
+| **Topics**           | `GET`           | `/topics`                                           | Retrieve all topics.                                       |
+| **Topics**           | `GET`           | `/topics/{id}`                                      | Retrieve a specific topic by ID.                          |
+| **Topics**           | `POST`          | `/topics`                                           | Create a new topic.                                        |
+| **Topics**           | `PUT`           | `/topics/{id}`                                      | Update an existing topic.                                  |
+| **Topics**           | `DELETE`        | `/topics/{id}`                                      | Delete a specific topic.                                   |
+| **Courses**          | `GET`           | `/topics/{topicId}/courses`                        | Get all courses under a specific topic.                   |
+| **Courses**          | `GET`           | `/topics/{topicId}/course/{id}`                    | Get details of a specific course by ID.                   |
+| **Courses**          | `POST`          | `/topics/{topicId}/courses`                        | Create a new course under a specific topic.               |
+| **Courses**          | `PUT`           | `/topics/{topicId}/course/{id}`                    | Update an existing course by ID.                          |
+| **Courses**          | `DELETE`        | `/topics/{topicId}/course/{id}`                    | Delete a specific course by ID.                           |
+| **Lessons**          | `GET`           | `/topics/{topicId}/course/{courseId}/lessons`      | Get all lessons under a specific course.                  |
+| **Lessons**          | `GET`           | `/topics/{topicId}/course/{courseId}/lessons/{id}` | Get details of a specific lesson by ID.                   |
+| **Lessons**          | `POST`          | `/topics/{topicId}/course/{courseId}/lessons`      | Create a new lesson under a specific course.              |
+| **Lessons**          | `PUT`           | `/topics/{topicId}/course/{courseId}/lessons/{id}` | Update an existing lesson by ID.                          |
+| **Lessons**          | `DELETE`        | `/topics/{topicId}/course/{courseId}/lessons/{id}` | Delete a specific lesson by ID.                           |  
 
 ---
 
-### Courses Endpoints
-6. **Get All Courses for a Topic**
-   - **Endpoint**: `GET /topics/{topicId}/courses`
-   - **Description**: Retrieves a list of all courses under a specific topic.
+## 🛠️ How to Set Up  
 
-7. **Get a Course by ID**
-   - **Endpoint**: `GET /topics/{topicId}/course/{id}`
-   - **Description**: Retrieves details of a specific course by its ID under a given topic.
+1. **Clone the Repository**  
+   ```bash  
+   git clone <repository_url>  
+   ```  
 
-8. **Create a New Course**
-   - **Endpoint**: `POST /topics/{topicId}/courses`
-   - **Description**: Creates a new course under a specific topic.
+2. **Navigate to the Project Directory**  
+   ```bash  
+   cd <project_directory>  
+   ```  
 
-9. **Update a Course**
-   - **Endpoint**: `PUT /topics/{topicId}/course/{id}`
-   - **Description**: Updates an existing course by its ID under a given topic.
+3. **Build the Project**  
+   ```bash  
+   mvn clean install  
+   ```  
 
-10. **Delete a Course**
-    - **Endpoint**: `DELETE /topics/{topicId}/course/{id}`
-    - **Description**: Deletes a specific course by its ID under a given topic.
-
----
-
-### Lessons Endpoints
-11. **Get All Lessons for a Course**
-    - **Endpoint**: `GET /topics/{topicId}/course/{courseId}/lessons`
-    - **Description**: Retrieves a list of all lessons under a specific course.
-
-12. **Get a Lesson by ID**
-    - **Endpoint**: `GET /topics/{topicId}/course/{courseId}/lessons/{id}`
-    - **Description**: Retrieves details of a specific lesson by its ID under a given course.
-
-13. **Create a New Lesson**
-    - **Endpoint**: `POST /topics/{topicId}/course/{courseId}/lessons`
-    - **Description**: Creates a new lesson under a specific course.
-
-14. **Update a Lesson**
-    - **Endpoint**: `PUT /topics/{topicId}/course/{courseId}/lessons/{id}`
-    - **Description**: Updates an existing lesson by its ID under a given course.
-
-15. **Delete a Lesson**
-    - **Endpoint**: `DELETE /topics/{topicId}/course/{courseId}/lessons/{id}`
-    - **Description**: Deletes a specific lesson by its ID under a given course.
+4. **Run the Application**  
+   ```bash  
+   mvn spring-boot:run  
+   ```  
 
 ---
 
-## How to Run
-1. Clone the repository:
-   ```bash
-   git clone <repository_url>
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd <project_directory>
-   ```
-3. Build the project:
-   ```bash
-   mvn clean install
-   ```
-4. Run the application:
-   ```bash
-   mvn spring-boot:run
-   ```
+## 🧪 How to Test  
+
+Use **Postman** or **cURL** to interact with the API:  
+
+- **Postman Example:**  
+  1. Open Postman.  
+  2. Create a new request.  
+  3. Set the method (GET, POST, PUT, DELETE).  
+  4. Enter the endpoint (e.g., `http://localhost:8080/topics`).  
+  5. Add required parameters or request body (if applicable).  
+
+- **cURL Example:**  
+   ```bash  
+   curl -X GET http://localhost:8080/topics  
+   ```  
 
 ---
 
-## How to Test
-You can use tools like **Postman** or **cURL** to test these endpoints. Replace `{id}`, `{topicId}`, or `{courseId}` with appropriate values when making API calls.
+## 🛡️ Built With  
+
+- **Java 8**  
+- **Spring Boot Framework**  
+- **Maven** for dependency management  
 
 ---
 
-## Contribution
-Contributions are welcome! Feel free to open issues or submit pull requests.
+## 📬 Contribution  
+
+Contributions are welcome! Follow these steps:  
+1. Fork this repository.  
+2. Create a new branch (`feature/my-new-feature`).  
+3. Commit your changes (`git commit -m 'Add my feature'`).  
+4. Push to the branch (`git push origin feature/my-new-feature`).  
+5. Open a Pull Request.  
 
 ---
 
-## Contact
-If you have any questions, feel free to reach out via [soumikghoshcodes@gmail.com] or [www.linkedin.com/in/soumikg-li].
-```
+## 📞 Contact  
 
+- **Email**: [soumikghoshcodes@gmail.com](mailto:soumikghoshcodes@gmail.com)  
+- **LinkedIn**: [Soumik Ghosh](https://www.linkedin.com/in/soumikg-li)  
+
+---
+
+### 🌟 Star This Repository  
+If you found this helpful, please give it a ⭐ to show your support!  
+
+--- 
