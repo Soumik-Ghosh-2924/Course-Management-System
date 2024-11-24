@@ -126,13 +126,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 ## Contact
-If you have any questions, feel free to reach out via [your email] or [LinkedIn Profile Link].
+If you have any questions, feel free to reach out via [soumikghoshcodes@gmail.com] or [www.linkedin.com/in/soumikg-li].
 ```
 
-### Key Features of the README:
-1. **Clarity**: Each endpoint is explained with its HTTP method, URL, and purpose.
-2. **Usability**: Includes steps to run and test the application.
-3. **Professionalism**: Encourages contributions and provides contact information.
-4. **Customization**: Replace placeholders like `<repository_url>` and `[your email]` with actual values.
-
-Let me know if you'd like further tweaks!
